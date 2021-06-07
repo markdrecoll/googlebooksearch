@@ -1,0 +1,27 @@
+{
+  "name": "googlebooksearch",
+  "version": "1.0.0",
+  "main": "server.js",
+  "repository": "https://github.com/markdrecoll/googlebooksearch.git",
+  "author": "mdre797 <markdrecoll@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "express": "^4.17.1",
+    "if-env": "^1.0.4",
+    "mongoose": "^5.12.13"
+  },
+  "devDependencies": {
+    "concurrently": "^6.2.0",
+    "nodemon": "^2.0.7"
+  },
+  "scripts": {
+    "start": "if-env NODE_ENV=production && yarn run start:prod || yarn run start:dev",
+    "start:prod": "node server.js",
+    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"yarn run client\"",
+    "client": "cd client && yarn run start",
+    "install": "cd client && yarn install",
+    "build": "cd client && yarn run build",
+    "heroku-postbuild": "yarn run build"
+  }
+}

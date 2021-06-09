@@ -4,5 +4,9 @@ const savedController = require("../../controller/savedController")
 
 router.route('/')
     .get(savedController.findAllSaved)
+    .post(savedController.saveBook)
+
+router.route('/:id')
+    .delete(savedController.deleteBook)
 
 module.exports = router;

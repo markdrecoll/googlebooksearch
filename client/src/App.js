@@ -1,13 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import React, { useState } from "react";
-import Jumbotron from "./components/Jumbotron";
-import Nav from "./components/Nav";
-import Input from "./components/Input";
-import Button from "./components/Button";
-import API from "./utils/API";
-import { RecipeList, RecipeListItem } from "./components/RecipeList";
-import { Container, Row, Col } from "./components/Grid";
+import Search from "./pages/search";
 
 function App() {
 
@@ -23,18 +17,15 @@ function App() {
 
   const handleFormSubmit = event => {
     // When the form is submitted, prevent its default behavior, get books update the books state
-    event.preventDefault();
-    API.getRecipes(bookSearch)
-      .then(res => setBooks(res.data))
-      .catch(err => console.log(err));
+    // event.preventDefault();
+    // API.getRecipes(bookSearch)
+    //   .then(res => setBooks(res.data))
+    //   .catch(err => console.log(err));
   };
-
-
-
 
   return (
     <div className="App">
-      Mark
+      <Search />
     </div>
   );
 }

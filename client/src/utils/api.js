@@ -11,7 +11,7 @@ const bookApi = {
 // // this function would return all books saved in the database
 // const bookApi = {
 //     findAllBooks: function(){
-//         // return axios.get("/api/saved");
+//         return axios.get("/api/saved");
 //     }
 // }
 

@@ -4,9 +4,9 @@ import "./style.css";
 function Nav() {
   return (
     <nav className="navbar navbar-dark bg-dark">
-      <a className="navbar-brand" href="/">
-        React Recipes
-      </a>
+      Google Books API
+      <a className="navbar-brand" href="/">Search</a>
+      <a className="navbar-brand" href="/">Saved</a>
     </nav>
   );
 }

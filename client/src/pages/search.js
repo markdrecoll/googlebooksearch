@@ -12,10 +12,10 @@ function Search() {
     useEffect(() => {
 
         if(userBookChoice !== ""){
-        API.findAllBooks(bookSearch)
-            .then(apiItems => setBooks(apiItems.data.items))
-            .then(() => {setUserBookChoice("")})
-        }
+            API.findAllBooks(bookSearch)
+                .then(apiItems => setBooks(apiItems.data.items))
+                .then(() => {setUserBookChoice("")})
+            }
             
     }, [bookSearch])
 

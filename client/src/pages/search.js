@@ -49,7 +49,7 @@ function Search() {
         <input
         onChange={handleInputChange}
         value={userBookChoice} />
-        <button onClick={handleFormSubmit}>Search</button>
+        <button onClick={handleFormSubmit} className="btn btn-secondary btn-sm m-1">Search</button>
         
 
         <BookList>

@@ -51,3 +51,7 @@ li, ul{
   color:lightgray;
   background-color: gray !important;
 }
+
+input{
+  background-color: lightgray;
+}

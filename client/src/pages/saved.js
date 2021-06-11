@@ -6,24 +6,18 @@ function Saved() {
     const [books, setBooks] = useState([]);
 
     API.showAllBooks()
-            .then(res => console.log("TEST", res.data))
-            // .then(res => setBooks(res.data))
-            
-          .catch(err => console.log(err));
-
-        //   useEffect(() => {
-
-        //   API.showAllBooks()
-        //   .then(res => setBooks(res.data))
-        //   .catch(err => console.log(err));
-                
-        // }, [books])
+            .then(res => setBooks(res.data))
+            .catch(err => console.log(err));
 
     return (
         <>
-        {books.map(book => (
-            {book}
-        ))}
+        {books.length > 0 && (
+            books.map(book => (
+                <p>
+                    {book.title}                    
+                </p>
+            ))
+        )}
         </>
     )
 }

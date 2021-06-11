@@ -5,7 +5,7 @@ function Nav() {
   return (
     <nav className="navbar row navbar-dark bg-dark">
         <span><a className="navbar-brand" href="/"> Search</a>
-        <a className="navbar-brand" href="/">Saved</a></span>
+        <a className="navbar-brand" href="/saved">Saved</a></span>
     </nav>
   );
 }

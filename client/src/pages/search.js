@@ -50,7 +50,6 @@ function Search() {
         onChange={handleInputChange}
         value={userBookChoice} />
         <button onClick={handleFormSubmit} className="btn btn-secondary btn-sm m-1">Search</button>
-        
 
         <BookList>
             {books.map(book => {

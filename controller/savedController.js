@@ -6,8 +6,12 @@ module.exports = {
             .find({}).then(bookData => res.json(bookData))
     },
     saveBook: (req, res) => {
+        console.log('the controller has been hit.  here is what they want us to insert')
+        console.log(req.body)
         db.Book
-            .create(req.body).then(bookData => res.json(bookData))
+            .create(req.body).then(bookData => res.json(bookData)).catch(err => {
+                res.json(err);
+            })
     },
     deleteBook: (req, res) => {
         db.Book

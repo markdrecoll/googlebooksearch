@@ -8,6 +8,7 @@ const bookApi = {
     },
 
     saveBook: function(bookdata){
+        console.log(`Save book has been fired off. heres the data: ${bookdata}`)
         return axios.post('/api/saved', bookdata);
     },
     showAllBooks: function(){

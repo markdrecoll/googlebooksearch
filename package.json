@@ -1,21 +1,8 @@
 {
-  "name": "googlebooksearch",
+  "name": "gglbooksearch",
   "version": "1.0.0",
+  "description": "",
   "main": "server.js",
-  "repository": "https://github.com/markdrecoll/googlebooksearch.git",
-  "author": "mdre797 <markdrecoll@gmail.com>",
-  "license": "MIT",
-  "dependencies": {
-    "axios": "^0.21.1",
-    "dotenv": "^10.0.0",
-    "express": "^4.17.1",
-    "if-env": "^1.0.4",
-    "mongoose": "^5.12.13"
-  },
-  "devDependencies": {
-    "concurrently": "^6.2.0",
-    "nodemon": "^2.0.7"
-  },
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
     "start:prod": "node server.js",
@@ -24,5 +11,17 @@
     "install": "cd client && npm install",
     "build": "cd client && npm run build",
     "heroku-postbuild": "npm run build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^4.1.0",
+    "nodemon": "^1.18.7"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "express": "^4.16.3",
+    "if-env": "^1.0.4",
+    "mongoose": "^5.3.16"
   }
 }

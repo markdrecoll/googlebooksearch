@@ -7,6 +7,7 @@ module.exports = {
     },
     saveBook: (req, res) => {
         db.Book
+            .create(req.body).then(bookData => res.json(bookData))
     },
     deleteBook: (req, res) => {
         db.Book

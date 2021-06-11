@@ -1,10 +1,11 @@
 .App {
   text-align: center;
   color:lightgray;
+  background-color: gray !important;
 }
 
 body{
-  background-color: gray;
+  background-color: gray !important;
 }
 
 .App-logo {
@@ -44,4 +45,9 @@ body{
 
 a{
   color:lightgray;
+}
+
+li, ul{
+  color:lightgray;
+  background-color: gray !important;
 }

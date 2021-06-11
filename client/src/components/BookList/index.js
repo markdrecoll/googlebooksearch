@@ -16,7 +16,8 @@ export function BookListItem({
   author,
   href,
   description,
-  thumbnail
+  thumbnail,
+  handleSaveBook
 }) {
 
   return (
@@ -24,16 +25,14 @@ export function BookListItem({
       <Container>
         <Row>
           <Col size="xs-4 sm-2">
-            {/* <Thumbnail src={thumbnail || "https://placehold.it/300x300"} /> */}
           </Col>
           <Col size="xs-8 sm-9">
             <h3>{title}</h3>
             <p>Author: {author}</p>
-            <p>Summary: {description}</p>
-            <p>Author: {author}</p>
-            <a rel="noreferrer noopener" target="_blank" href={href}>
-              Go to Book
-            </a>
+            <p>Description: {description}</p>
+            <img src={thumbnail} /><br /><br />
+            <a rel="noreferrer noopener" target="_blank" href={href} className="btn btn-secondary btn-sm m-1">Go to Book</a>
+            <button data-title={title} onClick={handleSaveBook} className="btn btn-secondary btn-sm m-1">Save</button>
           </Col>
         </Row>
       </Container>

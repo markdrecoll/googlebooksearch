@@ -1,4 +1,3 @@
-![googleBookSearch_screenshot01](https://user-images.githubusercontent.com/77694281/121949842-90faca80-cd1e-11eb-83b1-279cf9fb3cde.PNG)
 # User Directory
   ## Table of Contents
    - [Demonstration](#Demonstration)
